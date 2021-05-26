@@ -1,0 +1,141 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  height: 500px;
+  width: 500px;
+  background: rgb(248, 107, 107);
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hand {
+  position: absolute;
+  top: 20%;
+  height: 150px;
+  width: 10px;
+  border-radius: 30px;
+  transform-origin: bottom;
+  background: #ffd000;
+  --rotate: 0;
+  transform: rotate(calc(var(--rotate) * 1deg));
+}
+
+.hand.minute {
+  height: 200px;
+  background: black;
+  top: 10%;
+}
+
+.hand.second {
+  top: 14%;
+  background: rgb(255, 31, 31);
+  height: 180px;
+  width: 3px;
+}
+
+.circle {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: #000;
+}
+
+.clock .number {
+  --rotation: 0;
+  position: absolute;
+  font-size: 30px;
+  /* background: green; */
+  height: 480px;
+  width: 480px;
+  text-align: center;
+  transform: rotate(var(--rotation));
+}
+
+.number.number1 {
+  --rotation: 30deg;
+}
+.number.number2 {
+  --rotation: 60deg;
+}
+.number.number3 {
+  --rotation: 90deg;
+}
+.number.number4 {
+  --rotation: 120deg;
+}
+.number.number5 {
+  --rotation: 150deg;
+}
+.number.number6 {
+  --rotation: 180deg;
+}
+.number.number7 {
+  --rotation: 210deg;
+}
+.number.number8 {
+  --rotation: 240deg;
+}
+.number.number9 {
+  --rotation: 270deg;
+}
+.number.number10 {
+  --rotation: 300deg;
+}
+.number.number11 {
+  --rotation: 330deg;
+}
+
+.number span {
+  display: inline-block;
+}
+.number.number1 span {
+  transform: rotate(-30deg);
+}
+.number.number2 span {
+  transform: rotate(-60deg);
+}
+.number.number3 span {
+  transform: rotate(-90deg);
+}
+.number.number4 span {
+  transform: rotate(-120deg);
+}
+.number.number5 span {
+  transform: rotate(-150deg);
+}
+.number.number6 span {
+  transform: rotate(-180deg);
+}
+.number.number7 span {
+  transform: rotate(-210deg);
+}
+.number.number8 span {
+  transform: rotate(-240deg);
+}
+.number.number9 span {
+  transform: rotate(-270deg);
+}
+.number.number10 span {
+  transform: rotate(-300deg);
+}
+.number.number11 span {
+  transform: rotate(-330deg);
+}
